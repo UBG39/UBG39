@@ -1,10 +1,10 @@
 [
   {
-    "title": "Neon Runner",
+    "title": "FingerBoardFury",
     "category": "Arcade",
-    "image": "images/neon-runner.svg",
-    "url": "games/game-1/index.html",
-    "description": "A quick arcade game starter."
+    "image": "FingerBoardFury.png",
+    "url": "games/FingerBoardFury/FingerBoard_Fury",
+    "description": "Master all the fingerboard tricks!"
   },
   {
     "title": "Pixel Sports",
