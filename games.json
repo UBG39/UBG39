@@ -1,12 +1,14 @@
+
 [
   {
-    "title": "FingerBoardFury",
+    "title": "Fingerboard Fury",
     "category": "Arcade",
-    "image": "FingerBoardFury.png",
-    "url": "games/FingerBoardFury/FingerBoard_Fury",
+    "image": "images/FingerBoardFury.png",
+    "url": "games/FingerBoardFury/FingerBoard_Fury.html",
     "description": "Master all the fingerboard tricks!"
-  },
-  {
+  }
+]
+
     "title": "Pixel Sports",
     "category": "Sports",
     "image": "images/pixel-sports.svg",
