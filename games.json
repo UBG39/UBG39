@@ -11,9 +11,9 @@
     "category": "Sports",
     "image": "images/pixel-sports.svg",
     "url": "games/game-2/index.html",
-    "description": "A sports game starter."
-  },
-  {
+   "description": "A sports game starter."
+}
+]   
     "title": "Mystery Puzzle",
     "category": "Puzzle",
     "image": "images/mystery-puzzle.svg",
