@@ -7,11 +7,11 @@
     "description": "Master all the tricks!."
   },
   {
-    "title": "Pixel Sports",
+    "title": "Basket Random",
     "category": "Sports",
-    "image": "images/pixel-sports.svg",
+    "image": "images/basketrandom.png",
     "url": "games/game-2/index.html",
-    "description": "A sports game starter."
+    "description": "Play against your friends or npcs!"
   },
   {
     "title": "Mystery Puzzle",
