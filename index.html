@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>UBG39 — Unblocked Games</title>
+  <meta name="description" content="Play games on UBG39.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="UBG39 home">
+      <span class="brand-mark">U</span><span>UBG<span class="brand-accent">39</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#games">Games</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-link" href="#games">Browse games <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR GAME SPOT</div>
+        <h1>Find your next<br><span>favorite game.</span></h1>
+        <p class="hero-copy">Quick games. Easy to play. All in one place.</p>
+        <a class="primary-button" href="#games">Explore games <span>→</span></a>
+      </div>
+      <div class="hero-side-card">
+        <div class="mini-label">WELCOME TO</div>
+        <div class="hero-logo">UBG<span>39</span></div>
+        <div class="hero-lines"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="mini-foot">PICK A GAME AND PLAY</div>
+      </div>
+    </section>
+
+    <section class="games-section" id="games">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE LIBRARY</div>
+          <h2>All games</h2>
+          <p>Choose something to play.</p>
+        </div>
+        <div class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input id="gameSearch" type="search" placeholder="Search games..." autocomplete="off" aria-label="Search games">
+        </div>
+      </div>
+
+      <div class="filters" id="categoryFilters" aria-label="Filter games">
+        <button class="filter active" data-category="All" type="button">All games</button>
+        <button class="filter" data-category="Arcade" type="button">Arcade</button>
+        <button class="filter" data-category="Action" type="button">Action</button>
+        <button class="filter" data-category="Sports" type="button">Sports</button>
+        <button class="filter" data-category="Puzzle" type="button">Puzzle</button>
+        <button class="filter" data-category="Racing" type="button">Racing</button>
+      </div>
+
+      <div class="game-grid" id="gamesGrid">
+        <div class="loading-state">Loading games...</div>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No games found. Try another search.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <div class="eyebrow">ABOUT UBG39</div>
+        <h2>Your place to play.</h2>
+      </div>
+      <p>UBG39 is a simple game hub. Add your own games by editing <code>games.json</code> and uploading their files.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand small-brand" href="index.html"><span class="brand-mark">U</span><span>UBG<span class="brand-accent">39</span></span></a>
+    <span>© UBG39</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
