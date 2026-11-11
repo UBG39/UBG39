@@ -7,9 +7,9 @@
     "description": "Master all the tricks!."
   },
   {
-    "title": "Basket Random",
+    "title": "Soccer Random",
     "category": "Sports",
-    "image": "images/basketrandom.png",
+    "image": "images/soccerrandom.png",
     "url": "games/game-2/index.html",
     "description": "Play against your friends or npcs!"
   },
