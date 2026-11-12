@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--ink:#f4f4f4;--muted:#b4b4b4;--dark:#151515;--panel:#202020;--line:#3a3a3a;--accent:#c9c9c9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#252525;color:var(--ink);font-family:Inter,system-ui,sans-serif;min-height:100vh;overflow-x:hidden}
+.wall-texture{position:fixed;inset:0;z-index:-2;background-color:#292929;background-image:
+linear-gradient(335deg,rgba(0,0,0,.16) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.16) 75%),
+linear-gradient(155deg,rgba(255,255,255,.035) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.035) 75%),
+linear-gradient(to right,#171717 1px,transparent 1px),linear-gradient(to bottom,#171717 1px,transparent 1px);
+background-size:64px 32px,64px 32px,64px 32px,64px 32px;background-position:0 0,32px 16px,0 0,0 0}
+.wall-texture:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0,transparent 0%,rgba(0,0,0,.38) 90%);pointer-events:none}
+.hero{position:relative;text-align:center;padding:26px 20px 34px;background:linear-gradient(180deg,#111 0%,rgba(18,18,18,.92) 78%,rgba(18,18,18,.2));border-bottom:1px solid #555;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;width:260px;height:5px;background:#777;opacity:.3;transform:rotate(-35deg);top:70px}.hero:before{left:-70px}.hero:after{right:-70px}
+.hero-top{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;color:#aaa;font-size:10px;font-weight:800;letter-spacing:2px}
+.tag{border:1px solid #454545;padding:8px 11px;border-radius:3px}.status{display:flex;align-items:center;gap:8px}.status i{width:7px;height:7px;border-radius:50%;background:#d5d5d5;box-shadow:0 0 10px #fff}
+.graffiti-logo{font-family:Anton,Impact,sans-serif;font-size:clamp(76px,13vw,150px);line-height:.98;letter-spacing:2px;color:transparent;background:linear-gradient(110deg,#a855f7 0%,#38bdf8 24%,#34d399 43%,#facc15 62%,#fb923c 78%,#f472b6 100%);background-clip:text;-webkit-background-clip:text;text-shadow:5px 5px 0 #171717,-3px -3px 0 #f4f4f4,0 9px 22px #000;transform:rotate(-2deg);margin:24px auto 8px;position:relative;width:max-content;max-width:100%;-webkit-text-stroke:1px #f5f5f5}
+.graffiti-logo span{color:#858585;text-shadow:5px 5px 0 #222,-2px -2px 0 #eee,0 9px 22px #000}
+.paint-splatter{position:absolute;font-size:26px;right:-28px;top:3px;color:#777;text-shadow:none;-webkit-text-stroke:0}
+.hero-sub{font-size:11px;letter-spacing:5px;color:#bdbdbd;font-weight:800;margin:18px 0 0}
+.hero-line{height:2px;width:90px;background:#888;margin:24px auto 0;box-shadow:0 0 15px #999}
+.shell{width:min(1180px,calc(100% - 36px));margin:42px auto 80px}
+.toolbar{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:25px}.eyebrow{font-size:10px;letter-spacing:3px;color:#aaa;font-weight:800;margin:0 0 10px}.toolbar h1{font-size:clamp(28px,4vw,45px);letter-spacing:-2px;margin:0;font-weight:800}.toolbar h1 span{color:#999}
+.search-wrap{display:flex;align-items:center;gap:12px;width:min(320px,100%);background:#171717;border:1px solid #4a4a4a;padding:0 15px;border-radius:7px;height:48px;color:#aaa;box-shadow:0 8px 22px #0002}.search-wrap span{font-size:25px}.search-wrap input{background:none;border:0;outline:0;color:white;width:100%;font:500 13px Inter}.search-wrap:focus-within{border-color:#aaa;box-shadow:0 0 0 3px #ffffff0c}
+.filters{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid #444}.filter{border:1px solid #4a4a4a;background:#202020;color:#aaa;border-radius:5px;padding:11px 15px;font-size:10px;letter-spacing:1px;font-weight:800;cursor:pointer;transition:.2s}.filter:hover,.filter.active{background:#e3e3e3;color:#171717;border-color:#e3e3e3}.filter small{margin-left:7px;opacity:.65}
+.wall-label{display:flex;justify-content:space-between;margin:24px 0 14px;color:#aaa;font-size:10px;font-weight:800;letter-spacing:2px}
+.games-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px}
+.game-card{position:relative;display:flex;flex-direction:column;min-width:0;background:linear-gradient(145deg,#303030,#1b1b1b);border:1px solid #484848;border-radius:8px;overflow:hidden;text-decoration:none;color:#fff;transition:transform .22s,border-color .22s,box-shadow .22s;box-shadow:0 7px 16px #0002}
+.game-card:hover{transform:translateY(-5px);border-color:#aaa;box-shadow:0 14px 28px #0005,0 0 0 1px #aaa3}
+.thumb{aspect-ratio:16/10;display:grid;place-items:center;background:linear-gradient(135deg,#454545,#222);position:relative;overflow:hidden;border-bottom:1px solid #444}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.thumb-fallback{font-family:Anton,Impact,sans-serif;font-size:36px;color:#777;text-shadow:2px 2px #111;transform:rotate(-5deg)}.slot-badge{position:absolute;top:9px;left:9px;background:#111d;color:#ddd;border:1px solid #7778;border-radius:3px;padding:5px 7px;font-size:9px;font-weight:800;letter-spacing:1px}
+.card-info{padding:13px 13px 14px;display:flex;flex-direction:column;gap:8px;flex:1}.game-title{font-size:13px;font-weight:800;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.game-desc{font-size:10px;line-height:1.5;color:#999;min-height:30px}.card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px}.category{font-size:9px;font-weight:800;letter-spacing:1px;color:#aaa;text-transform:uppercase}.play{font-size:10px;font-weight:800;color:#eee;border:1px solid #555;border-radius:4px;padding:6px 8px}.game-card:hover .play{background:#ddd;color:#111;border-color:#ddd}
+.empty{text-align:center;padding:55px 20px;color:#aaa;border:1px dashed #555;border-radius:8px}.hidden{display:none!important}
+footer{border-top:1px solid #484848;background:#151515;padding:20px max(18px,calc((100% - 1180px)/2));display:flex;gap:18px;align-items:center;color:#8e8e8e;font-size:9px;font-weight:800;letter-spacing:1.5px}footer b{color:#ddd}.footer-mark{font-family:Anton,Impact,sans-serif;font-size:21px;color:#ddd;border:1px solid #555;padding:4px 8px;transform:rotate(-4deg)}.footer-right{margin-left:auto}
+@media(max-width:1000px){.games-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:720px){.games-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.toolbar{align-items:stretch;flex-direction:column}.search-wrap{width:100%}.hero-top{font-size:8px}.hero{padding-top:18px}.shell{margin-top:30px}}
+@media(max-width:480px){.games-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.shell{width:calc(100% - 24px)}.filters{gap:6px}.filter{padding:9px 10px;font-size:9px}.hero-sub{letter-spacing:3px}.wall-label{font-size:8px}footer{flex-wrap:wrap}.footer-right{width:100%;margin-left:0}}
+
+/* COLOR GRAFFITI EDIT: colorful spray paint accents, grayscale brick + cards */
+.graffiti-logo{
+  background:linear-gradient(105deg,#c084fc 0%,#38bdf8 24%,#2dd4bf 43%,#facc15 62%,#fb923c 78%,#fb7185 100%);
+  background-clip:text;-webkit-background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 10px #a855f755);
+}
+.graffiti-logo span{
+  background:linear-gradient(135deg,#fde047,#fb923c,#f472b6);
+  background-clip:text;-webkit-background-clip:text;color:transparent;
+}
+.paint-splatter{color:#facc15;text-shadow:0 0 12px #facc1566}
+.hero-line{background:linear-gradient(90deg,#a855f7,#38bdf8,#facc15,#f472b6);box-shadow:0 0 15px #a855f755}
+.filter.active{background:linear-gradient(110deg,#a855f7,#38bdf8);color:#fff;border-color:#c084fc}
+.game-card:hover{border-color:#a855f7;box-shadow:0 14px 28px #0005,0 0 0 1px #a855f755}
+.game-card:hover .play{background:linear-gradient(135deg,#a855f7,#38bdf8);color:#fff;border-color:#a855f7}
