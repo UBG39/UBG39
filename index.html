@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UBG39 — Underground Game Hub</title>
+  <meta name="description" content="UBG39 — your underground arcade.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wall-texture" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero-top"><span class="tag">THE UNDERGROUND ARCADE</span><span class="status"><i></i> <span id="slot-total">35</span> GAMES</span></div>
+    <div class="graffiti-logo" aria-label="UBG39"><span class="l1">UBG</span><span class="l2">39</span><b class="paint-splatter">✦</b></div>
+    <p class="hero-sub">PLAY LOUD. STAY UNDERGROUND.</p>
+    <div class="hero-line"></div>
+  </header>
+
+  <main class="shell">
+    <section class="toolbar">
+      <div><p class="eyebrow">THE GAME WALL</p><h1>Pick your <span>next game.</span></h1></div>
+      <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search the wall..." autocomplete="off" aria-label="Search games"></label>
+    </section>
+    <nav class="filters" id="filters" aria-label="Game categories"></nav>
+    <div class="wall-label"><span>▰ AVAILABLE CABINETS</span><span id="count">LOADING…</span></div>
+    <section id="games-container" class="games-grid" aria-live="polite"></section>
+    <div id="empty" class="empty hidden">Nothing on this part of the wall. Try another search.</div>
+  </main>
+  <footer><span class="footer-mark">U39</span><span>BUILT FOR THE GAME. <b>NO EXTRA NOISE.</b></span><span class="footer-right" id="footer-count">35 CABINETS · 1 ARCADE</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
