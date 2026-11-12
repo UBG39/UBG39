@@ -9,11 +9,11 @@
   },
   {
     "id": 2,
-    "title": "Street Brawl",
+    "title": "Ragdoll Archers",
     "category": "Action",
     "image": "images/game-02.svg",
     "url": "games/game-02/index.html",
-    "description": "Action cabinet #02. Placeholder - drop your game into games/game-02/."
+    "description": "Attack other stick men with arrows!"
   },
   {
     "id": 3,
